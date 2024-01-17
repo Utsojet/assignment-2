@@ -140,18 +140,28 @@ header{
 }
 .btn{
     cursor: pointer;
-    background-color: #FF5400;
-    color: #FFF;
     width: 40%;
-    height: 3.24rem;
-    padding: 1rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: .5rem;
+    outline: 0;
     border: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
     font-size: 1rem;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
+    transition: all 0.5s ease-in-out;
 }
+.fas {
+    margin-right: 1rem;
+}
+
 .content-2{
     margin: 5rem 0rem;
     height: 500px;
