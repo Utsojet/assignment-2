@@ -3,7 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
-
+    user-select: none;
+    overflow-x: hidden;
+}
+.title-container{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0; 
+}
+.title-container h1{
+    margin: 1rem 0;
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.title-container p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 26px;
 }
 header{
     width: 100%;
@@ -25,6 +47,20 @@ header{
 }
 .logo{
    display: flex;
+}
+.hamburger-menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-bar{
     display:flex ;
@@ -53,7 +89,6 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,28 +212,7 @@ header{
     font-size: 1rem;
     font-weight: 700;
 }
-.destination-description{
-    width: 100%;
-    height: 30vh;
-    text-align: center;
-    margin: 2rem 0; 
-}
-.destination-description h1{
-    margin: 1rem 0;
-    color: #131318;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 800px;
-}
-.destination-description p{
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-    width: 60%;
-    margin: 0 auto;
-    line-height: 26px;
-}
+
 .parent{
     width: 98%;
     margin: 1rem auto 3rem auto;
@@ -300,4 +314,540 @@ header{
     align-items: center;
     text-align: center;
     grid-area: 3 / 3 / 4 / 5;
+}
+.choose-us{
+    width: 96%;
+    margin: 2rem auto 2rem auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.destination-description{
+    width: 100%;
+}
+.detals-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.detals-top div{
+    width: 45%;
+    padding: 2rem 2.5rem;
+}
+.detals-top div h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 800;
+}
+.detals-top div p{
+    width: 90%;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.best-price h1{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: normal;
+    font-weight: 800;
+}
+.best-price p{
+    width: 90%;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.hotel{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.map{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.best-price{
+    width: 45%;
+    margin: 2rem auto 1rem auto;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    transform: translate(-50);
+}
+.deals {
+    height: 100%;
+    width: 100%;
+}
+.main-deals{
+    width: 100%;
+    height: 100%;
+    margin-top: 4rem;
+}
+.deals1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    background-image: url("../Images/Rectangle 12.png");
+    margin-bottom: 3rem;
+}
+.second {
+    background-image: url("../Images/Rectangle 12...jpg");
+}
+.third {
+    background-image: url("../Images/Rectangle 12.png ");
+}
+.right {
+    justify-content: end;
+}
+
+.left {
+    justify-content: start;
+}
+.offer{
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.717);
+    width: 50%;
+    border: 2px solid white;
+}
+.offer h1 {
+    font-size: 1.4rem;
+    font-weight: 800
+}
+
+.offer p {
+    margin: 1.2rem 0 1.2rem 0;
+    color: #5A5A5D;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.offer-icon {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.offer-icon img {
+    width: 22px;
+    height: 22px;
+}
+.offer-icon p {
+    color: #5A5A5D;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-right: .5rem;
+}
+.offer h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: .7em;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+.deals-btn{
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last {
+    height: 100%;
+    padding: 2rem 0;
+    margin: 1rem auto;
+}
+.last-first h1{
+    width: 70%;
+}
+.last-first p {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.last-first ul {
+    width: 80%;
+}
+.last-first {
+    width: 50%;
+}
+.last-last video{
+    width: 45%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 16px;
+    
+}
+.last-last h1{
+    text-align: center;
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    width: 30%;
+    font-weight: 700;
+    line-height: 40px;
+    color: rgba(252, 107, 4, 0.967);
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+.last-2nd{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last2first {
+    width: 45%;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+}
+
+.last2first h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.last2first p {
+    color: #5A5A5D;
+    width: 70%;
+    margin: 1rem 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.last2first div input {
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+.last2second {
+    width: 55%;
+    height: 422px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    padding: 0 2rem 2rem 0;
+    align-items: end;
+    background-image: url("../Images/Rectangle 8.png");
+}
+.tag {
+    padding-top: 1rem;
+    width: 224px;
+    height: 80px;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 800;
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -40px;
+}
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.footerContainer {
+    padding: 4rem 2rem;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+.footerContainer span {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footerContainer p {
+    color: #5A5A5D;
+    width: 95%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.last2btn {
+    width: 100%;
+}
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+footer h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+.logoContainer a img {
+    width: 24px;
+    height: 24px;
+}
+.logo2{
+    position: relative;
+    left: 35%;
+}
+
+@media (max-width: 992px) {
+    
+    .nav-bar > ul {
+        display: none;
+    }
+    .logo img {
+        width: 28.724px;
+        height: 33.516px;
+        flex-shrink: 0;
+    }
+    .nav-bar > span,
+    .travel {
+        color: #131318;
+        font-size: 21.543px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .travel {
+        color: #FF5400;
+    }
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .input-area {
+        width: 80vw;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    .banner-1 h1 {
+        font-size: 22px;
+    }
+    .banner-1 p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    .input,
+    .btn {
+        width: 70%;
+        height: 52px;
+        gap: 1rem;
+    }
+    .content-2 {
+        flex-direction: column;
+        height: 100%;
+    }
+    .title-container{
+        margin-bottom: 0;
+    }
+    .left-part,
+    .right-part {
+        width: 100%;
+    }
+    .left-part p {
+        width: 97%;
+    }
+    .right-part {
+        height: 100%;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .right-part img {
+        padding-right: 0;
+        width: 100%;
+        height: 342px;
+    }
+    .destination h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .destination p {
+        width: 90%;
+    }
+    .parent {
+        padding: 0 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .parent div {
+        grid-area: auto;
+        height: 350px;
+
+    }
+    .choose-us {
+        margin: 0 auto;
+    }
+    .detals-top {
+        flex-direction: column;
+    }
+    .detals-top div {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .best-price {
+        margin: 0;
+        width: 100%;
+    }
+    .best-price img {
+        width: 44px;
+        height: 44px;
+    }
+    .best-price h1 {
+        font-size: 24px;
+        margin: 1.5rem 0;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .title-container h1 {
+        font-size: 20px;
+        margin: .5rem 0;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .title-container p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .title-container p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .deals1 {
+        justify-content: center;
+        align-items: end;
+    }
+    .offer {
+        width: 100%;
+    }
+    .offer p {
+        margin: 0;
+        width: 100%;
+    }
+    .offer-icon p {
+        margin-right: .2rem;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .offer-icon {
+        width: 100%;
+        margin-bottom: .4rem;
+    }
+    .offer-icon img {
+        width: 18px;
+        height: 18px;
+    }
+    .icon {
+        gap: .3rem;
+    }
+    .best-price {
+        border-radius: 0%;
+        padding: 1rem .5rem;
+    }
+    .detals-top div {
+        border-radius: 0%;
+        padding: 1rem .5rem;
+    }
+    .detals-top div img {
+        width: 44px;
+        height: 44px;
+    }
+    .detals-top div h1 {
+        font-size: 20px;
+        margin: .5rem 0;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .detals-top div p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .title-container h1 {
+        font-size: 20px;
+    }
+    .title-container p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 95%;
+        margin: 1rem auto 1rem auto;
+    }
+    .last-last {
+        width: 100%;
+        height: 500px;
+    }
+    .last-first h1 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 20px;
+    }
+    .last-last video{
+        width: 100% ;
+        height: auto;
+        margin-top: 50px;
+        position: absolute;
+    }
+    .last-last h1{
+        text-align: center;
+        width: auto;
+        font-weight: 700;
+        line-height: 40px;
+        color: rgba(252, 107, 4, 0.967);
+        position: absolute;
+        padding-top: 150px;
+        padding-left: 150px;
+    }
+    .last-2nd 
+    {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .last2first {
+        width: 100%;
+    }
+    .last2second {
+        border-radius: 0;
+        height: 350px;
+        width: 100%;
+    }
+    .footerContainer {
+        width: 95%;
+    }
+    .footerContainer p {
+        width: 100%;
+    }
 }
